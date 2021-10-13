@@ -1,0 +1,42 @@
+.gallery {
+    padding: 49px 0 106px;
+    color: #fff;
+    background: #886239;
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__title {
+        margin-bottom: 39px;
+    }
+
+    &__item-inner {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 32px;
+    }
+
+    &__link {
+        display: inline-block;
+        font-size: 16px;
+        font-weight: normal;
+        text-decoration: underline;
+        padding-right: 159px;
+    }
+
+    .slick-next,
+    .slick-prev {
+        top: -10%;
+    }
+
+    .slick-next {
+        width: 96px;
+    }
+
+    .slick-prev {
+        left: 1010px;
+    }
+}

@@ -1,0 +1,33 @@
+.about {
+    padding: 104px 0 100px;
+
+    &__inner {
+        display: grid;
+        grid-template-columns: 448px 640px;
+        grid-gap: 32px;
+    }
+
+    &__title {
+        margin-bottom: 25px;
+    }
+
+    &__text {
+        margin-bottom: 34px;
+    }
+
+    &__link {
+        color: #C4C4C4;
+        font-size: 16px;
+        text-decoration: underline;
+    }
+
+    &__popup {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(/images/video.jpg);
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}

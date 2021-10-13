@@ -1,0 +1,18 @@
+.direction {
+    padding: 100px 0 100px;
+
+    &__inner {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 32px;
+    }
+
+    &__item {
+        border: 1px solid #D9D9DE;
+        border-top: none;
+    }
+
+    &__descr {
+        padding: 12px 19px 19px;
+    }
+}

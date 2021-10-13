@@ -1,0 +1,21 @@
+{
+  "name": "safari-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "devserver": "live-server",
+    "compile:sass": "node-sass sass/main.scss css/style.css"
+  },
+  "author": "Gaya",
+  "license": "ISC",
+  "devDependencies": {
+    "browserslist": "^4.17.3",
+    "live-server": "^1.2.1",
+    "node-sass": "^6.0.1",
+    "postcss": "^8.3.9",
+    "postcss-cli": "^9.0.1"
+  },
+  "dependencies": {}
+}
