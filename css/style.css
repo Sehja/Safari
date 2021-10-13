@@ -1,5 +1,5 @@
 .header {
-  background-image: url(/images/header-background.jpg);
+  background-image: url(../images/header-background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center; }
@@ -96,7 +96,7 @@ ul {
     padding: 12px 19px 19px; }
 
 .trevel-info {
-  background-image: url(/images/panorama.jpg);
+  background-image: url(../images/panorama.jpg);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
@@ -180,7 +180,7 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(/images/video.jpg);
+    background-image: url(../images/video.jpg);
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover; }
@@ -281,7 +281,8 @@ ul {
     font-family: 'Roboto', sans-serif;
     max-height: 112px;
     font-weight: normal;
-    margin-bottom: 67px; }
+    margin-bottom: 67px;
+    overflow: auto; }
   .form__btn {
     background: #886239;
     border-radius: 30px;
