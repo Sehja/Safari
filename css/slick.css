@@ -118,11 +118,6 @@
     display: none;
 }
 
-.slick-next,
-.slick-prev {
-    top: -10%;
-}
-
 .slick-next:before,
 .slick-prev:before {
     display: none;
