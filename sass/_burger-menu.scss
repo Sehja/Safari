@@ -1,0 +1,87 @@
+.navigation {
+
+    &__checkbox {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        clip: rect(0 0 0 0);
+    }
+
+    &__label {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        right: 30px;
+        top: 104px;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: #886239;
+        z-index: 2000;
+        cursor: pointer;
+
+        @media screen and (min-width:600px) {
+            display: none;
+        }
+    }
+
+    &__nav {
+        display: none;
+    }
+
+    &__fake {
+        display: inline-block;
+        width: 37px;
+        height: 2px;
+        background-color: #fff;
+        position: relative;
+        transition: .4s;
+
+    }
+
+    &__fake::before,
+    &__fake::after {
+        content: "";
+        display: inline-block;
+        width: 37px;
+        height: 2px;
+        background-color: inherit;
+        position: absolute;
+        background-color: #fff;
+        transition: .4s;
+
+    }
+
+    &__fake::before {
+        top: 8px;
+    }
+
+    &__fake::after {
+        top: -8px;
+    }
+
+    &__label:hover &__fake::before {
+        top: 10px;
+    }
+
+    &__label:hover &__fake::after {
+        top: -10px;
+    }
+
+    &__checkbox:checked~&__fake {
+        background-color: transparent;
+    }
+
+    &__checkbox:checked~&__fake::before {
+        transform: rotate(220deg);
+        top: 0;
+
+    }
+
+    &__checkbox:checked~&__fake::after {
+        transform: rotate(-220deg);
+        top: 0;
+    }
+
+}

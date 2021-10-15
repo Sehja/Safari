@@ -26,10 +26,43 @@
                         <img src="./images/logo.svg" alt="logo" class="logo__img">
                     </a>
                     <div class="header__phone">
-                        Заказ туров и бронирование:
+                        <span class="header__text">Заказ туров и бронирование:</span>
                         <a class="header__phone-number" href="tel:80508543543">тел. 8-050-8-543-543</a>
                     </div>
                     <nav class="menu">
+
+                        <!-- ---------------BURGER MENU START----------------- -->
+
+
+                        <div class="navigation">
+                            <label class="navigation__label">
+                                <input type="checkbox" class="navigation__checkbox">
+                                <span class="navigation__fake"></span>
+                            </label>
+                            <div class="navigation__background"></div>
+                            <nav class="navigation__nav">
+                                <ul class="navigation__list">
+                                    <li class="navigation__item">
+                                        <a href="#" class="navigation__link">Бронирование</a>
+                                    </li>
+                                    <li class="navigation__item">
+                                        <a href="#" class="navigation__link">Экскурсии</a>
+                                    </li>
+                                    <li class="navigation__item">
+                                        <a href="#" class="navigation__link">Туры </a>
+                                    </li>
+                                    <li class="navigation__item">
+                                        <a href="#" class="navigation__link">Об Африке</a>
+                                    </li>
+                                    <li class="navigation__item">
+                                        <a href="#" class="navigation__link">О нас</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <!-- ---------------BURGER MENU FINISH----------------- -->
+
                         <ul class="menu__list">
                             <li class="header__item">
                                 <a href="#" class="menu__link">Бронирование</a>
@@ -66,7 +99,7 @@
         </div>
     </header>
 
-    <div class="direction">
+    <!-- <div class="direction">
         <div class="container">
             <div class="direction__inner">
                 <div class="direction__item">
@@ -369,13 +402,45 @@
                 <textarea class="form__textarea" name="" id="" placeholder="Комменатрий"></textarea>
                 <button class="form__btn">Отправить заявку</button>
                 <label class="form__label">
+                    <input class="form__checkbox" type="checkbox">
                     <span class="form__checkbox-style"></span>
-                    <input class="form__checkbox" type="checkbox">Согласие на обработку персональных
+                    Согласие на обработку персональных
                     данных
                 </label>
             </form>
         </div>
     </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__logo">
+                <a href="#" class="logo">
+                    <img src="./images/logo.svg" alt="logo" class="logo__img">
+                </a>
+            </div>
+
+            <div class="footer__info">
+                <div class="footer__item">
+                    <p class="footer__title">Турагентство «Сафари Туристик»</p>
+                    <copyright>&#169© 2021. Все права защищены</copyright>
+                    <a class="footer__policy" href="#">Политика конфиденциальности</a>
+
+                </div>
+                <div class="footer__item">
+                    <p class="footer__title">Адрес:</p>
+                    <address class="footer__address">г. Киев, ул.Мира, 20,
+                        отель «Динамо», 1 этаж</address>
+                </div>
+                <div class="footer__item">
+                    <p class="footer__title">Заказ туров и бронирование:</p>
+                    <a href="tel:80508543543" class="footer__link">тел. 8-050-8-543-543
+                    </a>
+                    <a href="mailto:safari_turistic@gmail.com" class="footer__link">e-mail:
+                        safari_turistic@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </footer> -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
