@@ -8,7 +8,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        min-height: 100vh;
+        min-height: 95vh;
     }
 
     &__top {
@@ -20,9 +20,36 @@
     }
 
     .logo {
+
+        position: relative;
+
+
         @media screen and (max-width:600px) {
             width: 100%;
             display: block;
+        }
+
+        &::after {
+            content: "";
+            background-image: url(/images/logo-small.svg);
+            background-size: cover;
+            background-position: center center;
+            display: none;
+            width: 225px;
+            height: 80px;
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            @media screen and (max-width:400px) {
+                display: block;
+            }
+        }
+
+        &__object {
+            @media screen and (max-width:400px) {
+                display: none;
+            }
         }
     }
 
@@ -58,7 +85,7 @@
 
         @media screen and (max-width:400px) {
             width: 100%;
-            text-align: center;
+            text-align: left;
         }
 
         &-number {
@@ -73,6 +100,12 @@
                 margin-left: 0;
                 font-size: 22px;
                 background-color: transparent;
+            }
+
+            @media screen and (max-width:400px) {
+                font-size: 15px;
+                padding: 0;
+                margin-top: 75px;
             }
         }
     }
@@ -93,6 +126,11 @@
         @media screen and (max-width:600px) {
             margin-bottom: 50px;
             font-size: 52px;
+        }
+
+        @media screen and (max-width:400px) {
+            font-size: 35px;
+            margin-bottom: 80px;
         }
 
     }
@@ -129,6 +167,12 @@
             margin-bottom: 60px;
             font-size: 20px;
         }
+
+        @media screen and (max-width:400px) {
+            font-size: 16px;
+            opacity: 1;
+            text-shadow: 1px 1px 1px #000000;
+        }
     }
 
     &__btn {
@@ -141,6 +185,11 @@
 
         @media screen and (max-width:900px) {
             margin-bottom: 100px;
+        }
+
+        @media screen and (max-width:400px) {
+            padding: 15px 40px 15px;
+            font-size: 15px;
         }
     }
 

@@ -7,17 +7,36 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 100vh; }
+    min-height: 95vh; }
   .header__top {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     padding-top: 31px;
     color: #ffffff; }
-  @media screen and (max-width: 600px) {
-    .header .logo {
-      width: 100%;
-      display: block; } }
+  .header .logo {
+    position: relative; }
+    @media screen and (max-width: 600px) {
+      .header .logo {
+        width: 100%;
+        display: block; } }
+    .header .logo::after {
+      content: "";
+      background-image: url(/images/logo-small.svg);
+      background-size: cover;
+      background-position: center center;
+      display: none;
+      width: 225px;
+      height: 80px;
+      position: absolute;
+      top: 0;
+      left: 0; }
+      @media screen and (max-width: 400px) {
+        .header .logo::after {
+          display: block; } }
+    @media screen and (max-width: 400px) {
+      .header .logo__object {
+        display: none; } }
   .header .menu {
     width: 100%;
     margin: 15px 0 49px;
@@ -41,7 +60,7 @@
     @media screen and (max-width: 400px) {
       .header__phone {
         width: 100%;
-        text-align: center; } }
+        text-align: left; } }
     .header__phone-number {
       display: inline-block;
       padding: 12px 31px;
@@ -54,6 +73,11 @@
           margin-left: 0;
           font-size: 22px;
           background-color: transparent; } }
+      @media screen and (max-width: 400px) {
+        .header__phone-number {
+          font-size: 15px;
+          padding: 0;
+          margin-top: 75px; } }
   .header__title {
     font-family: 'PT Serif', serif;
     font-size: 90px;
@@ -68,6 +92,10 @@
       .header__title {
         margin-bottom: 50px;
         font-size: 52px; } }
+    @media screen and (max-width: 400px) {
+      .header__title {
+        font-size: 35px;
+        margin-bottom: 80px; } }
   @media screen and (max-width: 900px) {
     .header__content {
       text-align: center;
@@ -94,6 +122,11 @@
       .header__descr {
         margin-bottom: 60px;
         font-size: 20px; } }
+    @media screen and (max-width: 400px) {
+      .header__descr {
+        font-size: 16px;
+        opacity: 1;
+        text-shadow: 1px 1px 1px #000000; } }
   .header__btn {
     display: inline-block;
     padding: 19px 55px 20px;
@@ -104,6 +137,10 @@
     @media screen and (max-width: 900px) {
       .header__btn {
         margin-bottom: 100px; } }
+    @media screen and (max-width: 400px) {
+      .header__btn {
+        padding: 15px 40px 15px;
+        font-size: 15px; } }
   .header__arrow {
     text-align: center; }
 
@@ -423,8 +460,8 @@ ul {
   align-items: center;
   justify-content: center;
   position: fixed;
-  right: 15px;
-  top: 40px;
+  right: 2px;
+  top: 32px;
   width: 60px;
   height: 60px;
   border-radius: 50%;
