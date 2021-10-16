@@ -48,13 +48,18 @@
     }
 
     &__text {
-        @media screen and (max-width:750px) {
+        @media screen and (max-width:780px) {
             display: none;
         }
     }
 
     &__phone {
         font-size: 16px;
+
+        @media screen and (max-width:400px) {
+            width: 100%;
+            text-align: center;
+        }
 
         &-number {
             display: inline-block;
@@ -64,8 +69,10 @@
             margin-left: 19px;
             margin-top: 20px;
 
-            @media screen and (min-width:600px) {
+            @media screen and (max-width:600px) {
                 margin-left: 0;
+                font-size: 22px;
+                background-color: transparent;
             }
         }
     }
