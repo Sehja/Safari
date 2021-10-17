@@ -22,7 +22,7 @@
         display: block; } }
     .header .logo::after {
       content: "";
-      background-image: url(/images/logo-small.svg);
+      background-image: url(../images/logo-small.svg);
       background-size: cover;
       background-position: center center;
       display: none;
@@ -479,7 +479,7 @@ ul {
   z-index: 80;
   top: 0;
   left: 0;
-  transform: translateX(-100%);
+  transform: translateX(100%);
   transition: .5s; }
 
 .navigation__list {
@@ -538,5 +538,4 @@ ul {
   top: 0; }
 
 .navigation__checkbox:checked ~ .navigation__nav {
-  display: block;
-  transform: translateX(100%); }
+  transform: translateX(0); }

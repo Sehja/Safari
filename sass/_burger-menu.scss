@@ -51,7 +51,7 @@
         left: 0;
         // right: -100%;
         // display: none;
-        transform: translateX(-100%);
+        transform: translateX(100%);
         transition: .5s;
     }
 
@@ -125,8 +125,7 @@
     }
 
     &__checkbox:checked~&__nav {
-        display: block;
-        transform: translateX(100%);
+        transform: translateX(0);
     }
 
 }
