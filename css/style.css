@@ -172,6 +172,9 @@ ul {
   font-weight: 500;
   font-size: 36px;
   line-height: 130%; }
+  @media screen and (max-width: 500px) {
+    .title {
+      font-size: 28px; } }
 
 .direction {
   padding: 100px 0 100px; }
@@ -179,9 +182,16 @@ ul {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 32px; }
+    @media screen and (max-width: 870px) {
+      .direction__inner {
+        grid-template-columns: repeat(2, 1fr); } }
   .direction__item {
     border: 1px solid #D9D9DE;
-    border-top: none; }
+    border-top: none;
+    cursor: pointer; }
+  @media screen and (max-width: 870px) {
+    .direction__img {
+      width: 100%; } }
   .direction__descr {
     padding: 12px 19px 19px; }
 
@@ -196,18 +206,37 @@ ul {
   .trevel-info__title {
     text-align: center;
     margin-bottom: 52px; }
+    @media screen and (max-width: 500px) {
+      .trevel-info__title {
+        font-size: 25px; } }
   .trevel-info__descr {
     font-size: 16px;
     line-height: 130%; }
+    @media screen and (max-width: 500px) {
+      .trevel-info__descr {
+        font-size: 14px; } }
   .trevel-info__inner {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 51px 54px; }
+    @media screen and (max-width: 700px) {
+      .trevel-info__inner {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 40px; } }
+    @media screen and (max-width: 400px) {
+      .trevel-info__inner {
+        grid-template-columns: repeat(1, 1fr); } }
   .trevel-info__img {
     margin-bottom: 15px; }
+  @media screen and (max-width: 700px) {
+    .trevel-info__item {
+      text-align: center; } }
 
 .popular {
   padding: 100px 0 82px; }
+  @media screen and (max-width: 500px) {
+    .popular {
+      padding: 60px 0 60px; } }
   .popular__title {
     margin-bottom: 40px;
     text-align: center; }
@@ -218,6 +247,14 @@ ul {
     grid-gap: 32px;
     color: #fff;
     border-bottom: 1px solid #D9D9DE; }
+    @media screen and (max-width: 1100px) {
+      .popular__inner {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        grid-gap: 20px; } }
+    @media screen and (max-width: 600px) {
+      .popular__inner {
+        grid-gap: 5px; } }
   .popular__link {
     display: flex;
     flex-direction: column;
@@ -231,6 +268,9 @@ ul {
       grid-column: span 2;
       grid-row: span 2;
       min-height: 542px; }
+      @media screen and (max-width: 500px) {
+        .popular__link:nth-child(3), .popular__link:nth-child(6) {
+          min-height: 100%; } }
     .popular__link-title {
       font-size: 18px;
       margin-bottom: 15px; }
