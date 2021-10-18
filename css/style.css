@@ -529,7 +529,7 @@ ul {
     max-height: 112px;
     font-weight: normal;
     margin-bottom: 67px;
-    overflow: auto; }
+    overflow: hidden; }
     @media screen and (max-width: 720px) {
       .form__textarea {
         width: 70%; } }
