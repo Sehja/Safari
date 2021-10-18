@@ -424,6 +424,9 @@ ul {
   .premium__title {
     margin-bottom: 114px;
     text-align: center; }
+    @media screen and (max-width: 900px) {
+      .premium__title {
+        margin-bottom: 65px; } }
   .premium__wrapper {
     display: flex;
     justify-content: space-between;
@@ -450,10 +453,16 @@ ul {
     font-family: 'PT Serif', serif;
     text-align: center;
     margin-bottom: 20px; }
+    @media screen and (max-width: 1000px) {
+      .premium__count {
+        font-size: 40px; } }
   .premium__descr {
     font-weight: 500;
     font-size: 20px;
     text-align: center; }
+    @media screen and (max-width: 1000px) {
+      .premium__descr {
+        font-size: 16px; } }
 
 .booking {
   padding: 75px 0 76px;

@@ -4,6 +4,10 @@
     &__title {
         margin-bottom: 114px;
         text-align: center;
+
+        @media screen and (max-width: 900px) {
+            margin-bottom: 65px;
+        }
     }
 
     &__wrapper {
@@ -45,11 +49,19 @@
             serif;
         text-align: center;
         margin-bottom: 20px;
+
+        @media screen and (max-width: 1000px) {
+            font-size: 40px;
+        }
     }
 
     &__descr {
         font-weight: 500;
         font-size: 20px;
         text-align: center;
+
+        @media screen and (max-width: 1000px) {
+            font-size: 16px;
+        }
     }
 }
