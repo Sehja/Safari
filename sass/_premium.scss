@@ -12,14 +12,26 @@
 
     &__wrapper {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         padding-bottom: 65px;
         margin-bottom: 44px;
         border-bottom: 1px solid #D9D9DE;
+
+        @media screen and (max-width: 800px) {
+            justify-content: space-evenly;
+            padding-bottom: 15px;
+        }
+
     }
 
     &__text-box {
         width: 45%;
+
+        @media screen and (max-width: 800px) {
+            font-size: 16px;
+            width: 100%;
+        }
     }
 
     &__text {
@@ -38,6 +50,14 @@
     &__items {
         display: flex;
         justify-content: space-between;
+
+        @media screen and (max-width: 800px) {
+            flex-direction: column;
+        }
+    }
+
+    &__item:not(:last-child) {
+        margin-bottom: 40px;
     }
 
     &__count {
@@ -52,6 +72,10 @@
 
         @media screen and (max-width: 1000px) {
             font-size: 40px;
+        }
+
+        @media screen and (max-width: 800px) {
+            margin-bottom: 0;
         }
     }
 

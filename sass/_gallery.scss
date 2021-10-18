@@ -23,6 +23,16 @@
         @media screen and (max-width: 600px) {
             font-size: 29px;
         }
+
+        @media screen and (max-width: 400px) {
+            font-size: 24px;
+        }
+    }
+
+    &__arrow {
+        @media screen and (max-width: 400px) {
+            width: 35px;
+        }
     }
 
     &__item-inner {
@@ -52,6 +62,10 @@
 
         @media screen and (max-width: 600px) {
             font-size: 12px;
+        }
+
+        @media screen and (max-width: 500px) {
+            display: none;
         }
     }
 
