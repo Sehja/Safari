@@ -25,7 +25,12 @@
         }
 
         @media screen and (max-width:600px) {
-            grid-gap: 5px;
+            grid-gap: 15px;
+        }
+
+        @media screen and (max-width:500px) {
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(10, 1fr);
         }
     }
 
@@ -47,6 +52,11 @@
 
             @media screen and (max-width: 500px) {
                 min-height: 100%;
+            }
+
+            @media screen and (max-width: 500px) {
+                grid-column: auto;
+                grid-row: auto;
             }
 
         }
