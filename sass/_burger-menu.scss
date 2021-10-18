@@ -77,7 +77,7 @@
         background-color: #fff;
         position: relative;
         transition: .4s;
-
+        box-shadow: 2px 2px 10px 0 #1F1E1E;
     }
 
     &__fake::before,
@@ -90,7 +90,7 @@
         position: absolute;
         background-color: #fff;
         transition: .4s;
-
+        box-shadow: 2px 2px 10px 0 #1F1E1E;
     }
 
     &__fake::before {

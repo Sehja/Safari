@@ -1,10 +1,30 @@
 .about {
     padding: 104px 0 100px;
 
+    @media screen and (max-width: 1200px) {
+        padding: 20px 0;
+    }
+
     &__inner {
         display: grid;
         grid-template-columns: 448px 640px;
         grid-gap: 32px;
+
+        @media screen and (max-width: 1200px) {
+            display: flex;
+            flex-direction: column;
+            padding: 0 80px;
+        }
+
+        @media screen and (max-width: 700px) {
+            padding: 0;
+        }
+    }
+
+    &__descr {
+        @media screen and (max-width: 1200px) {
+            text-align: center;
+        }
     }
 
     &__title {
@@ -29,5 +49,32 @@
         background-position: top center;
         background-repeat: no-repeat;
         background-size: cover;
+
+        @media screen and (max-width: 1200px) {
+            height: 230px;
+            background-size: contain;
+        }
+
+        @media screen and (max-width: 600px) {
+            height: 180px;
+        }
+
+        @media screen and (max-width: 450px) {
+            height: 150px;
+        }
+
+        @media screen and (max-width: 400px) {
+            height: 110px;
+        }
+    }
+
+    &__img {
+        @media screen and (max-width: 600px) {
+            width: 50px;
+        }
+
+        @media screen and (max-width: 400px) {
+            width: 30px;
+        }
     }
 }

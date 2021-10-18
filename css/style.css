@@ -285,19 +285,42 @@ ul {
 
 .map {
   padding: 100px 0 100px; }
+  @media screen and (max-width: 1170px) {
+    .map {
+      padding: 15px 0 60px; } }
   .map__title {
     margin-bottom: 46px;
     text-align: center;
     font-weight: 500;
     font-size: 36px;
     line-height: 130%; }
+    @media screen and (max-width: 500px) {
+      .map__title {
+        font-size: 25px; } }
+  @media screen and (max-width: 600px) {
+    .map iframe {
+      height: 300px; } }
 
 .about {
   padding: 104px 0 100px; }
+  @media screen and (max-width: 1200px) {
+    .about {
+      padding: 20px 0; } }
   .about__inner {
     display: grid;
     grid-template-columns: 448px 640px;
     grid-gap: 32px; }
+    @media screen and (max-width: 1200px) {
+      .about__inner {
+        display: flex;
+        flex-direction: column;
+        padding: 0 80px; } }
+    @media screen and (max-width: 700px) {
+      .about__inner {
+        padding: 0; } }
+  @media screen and (max-width: 1200px) {
+    .about__descr {
+      text-align: center; } }
   .about__title {
     margin-bottom: 25px; }
   .about__text {
@@ -314,6 +337,25 @@ ul {
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover; }
+    @media screen and (max-width: 1200px) {
+      .about__popup {
+        height: 230px;
+        background-size: contain; } }
+    @media screen and (max-width: 600px) {
+      .about__popup {
+        height: 180px; } }
+    @media screen and (max-width: 450px) {
+      .about__popup {
+        height: 150px; } }
+    @media screen and (max-width: 400px) {
+      .about__popup {
+        height: 110px; } }
+  @media screen and (max-width: 600px) {
+    .about__img {
+      width: 50px; } }
+  @media screen and (max-width: 400px) {
+    .about__img {
+      width: 30px; } }
 
 .gallery {
   padding: 49px 0 106px;
@@ -542,7 +584,8 @@ ul {
   height: 2px;
   background-color: #fff;
   position: relative;
-  transition: .4s; }
+  transition: .4s;
+  box-shadow: 2px 2px 10px 0 #1F1E1E; }
 
 .navigation__fake::before, .navigation__fake::after {
   content: "";
@@ -552,7 +595,8 @@ ul {
   background-color: inherit;
   position: absolute;
   background-color: #fff;
-  transition: .4s; }
+  transition: .4s;
+  box-shadow: 2px 2px 10px 0 #1F1E1E; }
 
 .navigation__fake::before {
   top: 8px; }
