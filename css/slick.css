@@ -1,4 +1,4 @@
-/* Slider */
+Slider
 .slick-slider
 {
     position: relative;
@@ -121,5 +121,4 @@
 .slick-next:before,
 .slick-prev:before {
     display: none;
-    top: -10%;
 }

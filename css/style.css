@@ -426,7 +426,8 @@ ul {
     justify-content: space-evenly; }
   .gallery .slick-next,
   .gallery .slick-prev {
-    position: static; }
+    position: static;
+    width: 60px; }
 
 .premium {
   padding: 100px 0; }
