@@ -169,6 +169,8 @@ body {
   font-family: 'Roboto', sans-serif;
   color: #1F1E1E;
   font-size: 18px; }
+  body ::selection {
+    background-color: #a88e6c; }
 
 .container {
   max-width: 1140px;
