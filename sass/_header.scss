@@ -3,13 +3,12 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
-    height: 100vh;
 
     &__inner {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        min-height: 95vh;
+        min-height: 100vh;
     }
 
     &__top {
