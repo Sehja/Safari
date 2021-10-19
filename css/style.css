@@ -427,8 +427,8 @@ ul {
   .gallery .slick-next,
   .gallery .slick-prev {
     position: static;
-    width: 60px;
-    height: 36px; }
+    width: 30px;
+    height: 20px; }
 
 .premium {
   padding: 100px 0; }
